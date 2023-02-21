@@ -19,8 +19,8 @@ class Form extends Component {
   makeResy = (e) => {
     e.preventDefault()
     const newResy = {
-        id: Date.now(),
-        ...this.state
+        ...this.state,
+        number: Number(this.state.number)
     }
     this.props.addResy(newResy)
     this.clear()
