@@ -1,0 +1,10 @@
+.ResyTile {
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: teal;
+    border-width: 5px;
+    color: teal;
+    width: 16vw;
+    margin: .8vw;
+}
