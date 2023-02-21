@@ -22,9 +22,3 @@ p {
     margin: 0;
 }
 
-.ResyTile > button {
-    background-color: teal;
-    color: white;
-    width: 80%;
-    height: 15%;
-}

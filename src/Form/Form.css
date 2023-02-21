@@ -1,0 +1,10 @@
+Form {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+input {
+    width: 14vw;
+    height: 4vh;
+}

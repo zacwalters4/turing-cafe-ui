@@ -25,3 +25,11 @@
   width: 100vw;
   
 }
+
+button {
+  background-color: teal;
+  color: white;
+  width: 14vw;
+  height: 4vh;
+  border-color:white;
+}

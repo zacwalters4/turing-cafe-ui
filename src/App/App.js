@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import ResyTile from '../ResyTile/ResyTile'
+import ResyTile from '../ResyTile/ResyTile';
+import Form from '../Form/Form';
 
 class App extends Component {
   constructor() {
@@ -15,6 +16,10 @@ class App extends Component {
       .then(data => this.setState({ reservations: [...data] }))
   }
 
+  addResy = (newResy) => {
+    this.setState({ reservations: [...this.state.reservations, newResy]})
+  }
+
   cancelResy = (id) => {
     const newResyList = this.state.reservations.filter(resy => resy.id != id)
     this.setState({reservations: newResyList})
@@ -25,7 +30,7 @@ class App extends Component {
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
-
+          <Form addResy={this.addResy} />
         </div>
         <div className='resy-container'>
           {this.state.reservations.map((resy, index) => {

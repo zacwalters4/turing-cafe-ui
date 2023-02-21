@@ -2,7 +2,6 @@ import React from "react";
 import './ResyTile.css';
 
 const ResyTile = (props) => {
-    console.log(props.reservation)
     return (
         <div className='ResyTile'>
             <h3>{props.reservation.name}</h3>
