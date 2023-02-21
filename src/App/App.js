@@ -15,6 +15,11 @@ class App extends Component {
       .then(data => this.setState({ reservations: [...data] }))
   }
 
+  cancelResy = (id) => {
+    const newResyList = this.state.reservations.filter(resy => resy.id != id)
+    this.setState({reservations: newResyList})
+  }
+
   render() {
     return (
       <div className="App">
@@ -24,7 +29,7 @@ class App extends Component {
         </div>
         <div className='resy-container'>
           {this.state.reservations.map((resy, index) => {
-            return (<ResyTile key={index} reservation={resy}/>)
+            return (<ResyTile key={index} reservation={resy} cancelResy={this.cancelResy}/>)
           })}
         </div>
       </div>

@@ -9,6 +9,7 @@ const ResyTile = (props) => {
             <p>{props.reservation.date}</p>
             <p>{`${props.reservation.time} pm`}</p>
             <p>{`Number of guests: ${props.reservation.number}`}</p>
+            <button onClick={() => props.cancelResy(props.reservation.id)}>Cancel</button>
         </div>
     )
 }

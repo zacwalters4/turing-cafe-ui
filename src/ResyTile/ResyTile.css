@@ -1,4 +1,8 @@
 .ResyTile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: white;
     border-style: solid;
     border-radius: 10px;
@@ -6,5 +10,21 @@
     border-width: 5px;
     color: teal;
     width: 16vw;
+    height: 25vh;
     margin: .8vw;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.ResyTile > button {
+    background-color: teal;
+    color: white;
+    width: 80%;
+    height: 15%;
 }
